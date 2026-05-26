@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Lab C</title>
+<style>  
+    /* Styling voor het kleine logo */
+    .logo {
+        position: fixed;  /* Blijft in dezelfde positie bij scrollen */
+        top: 750px;        /* 10 pixels vanaf de bovenkant */
+        right: 10px;      /* 10 pixels vanaf de rechterkant */
+        width: 125px;     /* Breedte van het logo */
+        height: auto;     /* Hoogte wordt automatisch aangepast */
+        z-index: 1;    /* Zorgt dat het boven andere elementen ligt */
+    }
+
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        background-color: white;
+    }
+
+    header {
+        padding: 20px;
+        text-align: center;
+        background-color: blue;
+    }
+
+    h1 {
+        font-family: Aharoni, monospace;
+        font-size: 100px;
+        color: #ffa500; /* Licht oranje */
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+
+    h2 {
+        font-family: Aharoni, monospace;
+        font-size: 24px;
+        font-style: italic;
+        color: #ffffff; /* wit */
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* ruimte tussen de figuren */
+    padding: 20px;
+}
+figure {
+    margin: 100px; /* kleinere marge rondom de figuur */
+    text-align: center;
+    width: 200px; /* breedte van de figuur */
+}
+    }
+
+    /* Styling voor de figuren en ondertitels */
+    figure {
+        margin: 120px;
+        text-align: center;
+        width: 200px; /* kleinere breedte voor alle plaatjes */
+    }
+
+    /* Pas de afbeelding aan voor kleinere plaatjes */
+    .groot {
+        width: 350px; /* kleinere breedte */
+        height: 220px; /* hoogte past zich aan */
+        object-fit: cover; /* plaatje wordt bijgesneden en niet vervormd */
+        border: 2px solid #ccc;
+        border-radius: 8px;
+    }
+
+    figcaption {
+        margin-top: 8px;
+        font-size: 14px;
+        color: #333;
+    }
+
+    /* Responsive voor kleinere schermen */
+    @media (max-width: 600px) {
+        figure {
+            width: 100%;
+        }
+        .groot {
+            width: 100%;
+        }
+    }
+</style>
+</head>
+<body>
+<img src="Schermafbeelding%202026-05-19%20121617.jpg" alt="DJ Lab Logo" class="logo" />
+
+<header>
+    <h1>Lab C</h1>
+    <h2>Dit is onze website waarin het werk van Platform C wordt gepresenteerd. 
+        Je hebt bij Lab C meerdere labs: DJ, fashion design, film en beats.</h2>
+</header>
+<div class="container">
+    <!-- Voorbeeld van een plaatje met link en ondertitel -->
+    <figure>
+        <a href="dj-lab.html">
+            <img src="Schermafbeelding%202026-05-13%20103149.jpg" alt="DJ Lab" class="groot" />
+        </a>
+        <figcaption>DJ Lab</figcaption>
+    </figure>
+    <figure>
+        <a href="Filmlab.html">
+            <img src="Schermafbeelding%202026-05-13%20103755.jpg" alt="Film Lab" class="groot" />
+        </a>
+        <figcaption>Film Lab</figcaption>
+    </figure>
+    <figure>
+        <a href="Fashiondesignlab.html">
+            <img src="Schermafbeelding%202026-05-13%20103803.jpg" alt="Fashion Design Lab" class="groot" />
+        </a>
+        <figcaption>Fashion Design Lab</figcaption>
+    </figure>
+    <figure>
+        <a href="Beatslab.html">
+            <img src="Schermafbeelding%202026-05-13%20103820.jpg" alt="Beats Lab" class="groot" />
+        </a>
+        <figcaption>Beats Lab</figcaption>
+    </figure>
+</div>
+</body>
+</html>
+      

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Film lab</title>
+    <style>
+        /* Styling voor de header */
+        header {
+            background-color: blue; /* of #0000ff */
+            padding: 20px; /* Ruimte rondom de koptekst */
+        }
+
+        /* Correcte CSS voor koptekst binnen header */
+        .beat-koptekst {
+            font-family: 'Aharoni', monospace;
+            font-size: 80px;
+            font-weight: bold;
+            color: #ffa500;
+            text-align: center;
+            margin: 0;
+        }
+
+        .beat-label {
+            font-family: 'Aharoni', monospace;
+            font-size: 20px;
+            font-weight: bold;
+            color: #333;
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        /* Styling voor het kleine logo */
+        .logo {
+            position: fixed;
+            top: 750px;
+            right: 10px;
+            width: 125px;
+            height: auto;
+            z-index: 1000;
+        }
+
+        /* Basis styling voor plaatjes */
+        .groot {
+            width: 400px;
+            height: 266px;
+            object-fit: cover;
+            margin: 10px;
+            border: 2px solid #ccc;
+            border-radius: 8px;
+        }
+
+        /* Styling voor de terugknop als afbeelding */
+        .terug-knop {
+            display: inline-block;
+            margin: 20px 0;
+            padding: 10px 15px;
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+        }
+
+        /* Styling voor de pijl-afbeelding binnen de knop */
+        .terug-knop img {
+            height: 50px;
+            vertical-align: middle;
+        }
+
+        /* Hover effect voor de pijl-afbeelding */
+        .terug-knop:hover img {
+            opacity: 0.8;
+        }
+
+        /* Container voor de plaatjes */
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 50px;
+            justify-content: center;
+        }
+
+        /* Voeg wat margin toe rondom de audio speler */
+        .audio-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+<!-- Pijl als terugknop met afbeelding -->
+<a href="index.html" class="terug-knop">
+  <img src="terug-pijl_318-9335.jpg" alt="Terug" />
+</a>
+
+<!-- Plaats het logo bovenaan de pagina -->
+<img src="Schermafbeelding%202026-05-19%20121617.jpg" alt="Lab C Logo" class="logo" />
+
+<!-- Header met titel -->
+<header>
+    <h1 class="beat-koptekst">Beats lab</h1>
+</header>
+
+<!-- Onder de koptekst de tekst, zonder onderstreping -->
+<p class="beat-label">
+Of je nu droomt van je eigen hit of gewoon wilt experimenteren met muziek, dit is jouw kans om jouw creativiteit om te zetten in unieke tracks. Ontdek hoe je verschillende genres kunt combineren en jouw eigen stijl kunt ontwikkelen in een inspirerende omgeving.</p>
+
+<!-- Audio speler dat automatisch afspeelt -->
+<div class="audio-container">
+    <audio src="180db_%20[130].mp3" controls autoplay></audio>
+</div>
+
+<!-- Gallery met plaatjes -->
+<div class="gallery">
+    <!-- Eerste plaatje -->
+    <figure>
+        <a href="dj-lab.html" target="_blank">
+            <img src="Schermafbeelding%202026-05-13%20103820.jpg" alt="DJ Lab" class="groot" />
+        </a>
+        <figcaption></figcaption>
+    </figure>
+    <!-- Tweede plaatje -->
+    <figure>
+        <a href="ander-pagina.html" target="_blank">
+            <img src="PC%202024-98.jpg" alt="Omschrijving van plaatje 2" class="groot" />
+        </a>
+        <figcaption>Allemaal beats aan het maken</figcaption>
+    </figure>
+    <!-- Derde plaatje -->
+    <figure>
+        <a href="nog-een-pagina.html" target="_blank">
+            <img src="PC%202024-97.jpg" alt="Omschrijving van plaatje 3" class="groot" />
+        </a>
+        <figcaption></figcaption>
+    </figure>
+    <!-- Vierde plaatje -->
+    <figure>
+        <a href="nog-een-pagina.html" target="_blank">
+            <img src="20240530-_DSC8131.jpg" alt="Omschrijving van plaatje 4" class="groot" />
+        </a>
+        <figcaption></figcaption>
+    </figure>
+</div>
+</body>
+</html>

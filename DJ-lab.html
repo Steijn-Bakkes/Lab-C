@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DJ Lab</title>
+    <style>
+        /* Styling voor de header */
+        header {
+            background-color: blue; /* of #0000ff */
+            padding: 20px; /* Optioneel, voor wat ruimte rondom de koptekst */
+        }
+        
+        /* Correcte CSS voor koptekst binnen header */
+        .dj-koptekst {
+            font-family: 'Aharoni', monospace;
+            font-size: 80px;
+            font-weight: bold;
+            color: #ffa500;
+            text-align: center;
+            margin: 0; /* Verwijdert eventuele standaard marges */
+        }
+
+        .dj-label {
+            font-family: 'Aharoni', monospace; /* voorbeeld font */
+            font-size: 20px; /* bijvoorbeeld een andere grootte */
+            font-weight: bold; /* vetgedrukt */
+            color: #333; /* andere kleur */
+            text-align: center;
+            margin: 20px 0; /* ruimte rondom de tekst */
+        }
+
+        /* Styling voor het kleine logo */
+        .logo {
+            position: fixed;  /* Blijft in dezelfde positie bij scrollen */
+            top: 750px;        /* 750px vanaf de bovenkant */
+            right: 10px;      /* 10 pixels vanaf de rechterkant */
+            width: 125px;     /* Breedte van het logo */
+            height: auto;     /* Hoogte wordt automatisch aangepast */
+            z-index: 1000;    /* Zorgt dat het boven andere elementen ligt */
+        }
+
+        /* Basis styling voor plaatjes, nu met vaste grootte en object-fit */
+        .groot {
+            width: 400px; /* vaste breedte */
+            height: 266px; /* vaste hoogte */
+            object-fit: cover; /* plaatje wordt bijgesneden zonder vervorming */
+            margin: 10px;
+            border: 2px solid #ccc;
+            border-radius: 8px;
+        }
+
+        /* Styling voor de terugknop als afbeelding */
+        .terug-knop {
+            display: inline-block;
+            margin: 20px 0;
+            padding: 10px 15px;
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+        }
+
+        /* Styling voor de pijl-afbeelding binnen de knop */
+        .terug-knop img {
+            height: 50px; /* hoogte van de pijl-afbeelding */
+            vertical-align: middle;
+        }
+
+        /* Hover effect voor de pijl-afbeelding */
+        .terug-knop:hover img {
+            opacity: 0.8;
+        }
+
+        /* Container voor de plaatjes */
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center; /* Dit centreert de plaatjes op de rij */
+        }
+    </style>
+</head>
+<body>
+<!-- Pijl als terugknop met afbeelding -->
+<a href="index.html" class="terug-knop">
+  <img src="terug-pijl_318-9335.jpg" alt="Terug" />
+</a>
+
+<!-- Plaats het logo bovenaan de pagina -->
+<img src="Schermafbeelding%202026-05-19%20121617.jpg" alt="Lab C Logo" class="logo" />
+
+<!-- Voeg een header toe rondom de koptekst -->
+<header>
+    <h1 class="dj-koptekst">DJ Lab</h1>
+</header>
+
+<figcaption class="dj-label">
+  Kom langs, laat je creativiteit horen en maak deel uit van een inspirerende community van jonge muziekliefhebbers. Of je nu beginner bent of al wat ervaring hebt, bij ons is er plek voor iedereen die zijn passie voor muziek wil ontwikkelen.
+</figcaption>
+
+<!-- Gallery met meerdere plaatjes en teksten -->
+<div class="gallery">
+    <!-- Eerste plaatje -->
+    <figure>
+        <a href="j-lab.html" target="_blank">
+            <img src="Schermafbeelding%202026-05-13%20103149.jpg" alt="DJ Lab" class="groot" />
+        </a>
+        <figcaption></figcaption>
+    </figure>
+    <!-- Tweede plaatje -->
+    <figure>
+        <a href="ander-pagina.html" target="_blank">
+            <img src="DSC00144.jpg" alt="Omschrijving van plaatje 2" class="groot" />
+        </a>
+        <figcaption>Allemaal aan het DJ-en</figcaption>
+    </figure>
+    <!-- Derde plaatje -->
+    <figure>
+        <a href="nog-een-pagina.html" target="_blank">
+            <img src="DSC00283.jpeg" alt="Omschrijving van plaatje 3" class="groot" />
+        </a>
+        <figcaption></figcaption>
+    </figure>
+</div>
+</body>
+</html>

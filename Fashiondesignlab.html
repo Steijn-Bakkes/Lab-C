@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Film lab</title>
+    <style>
+        /* Styling voor de header */
+        header {
+            background-color: blue; /* of #0000ff */
+            padding: 20px; /* Ruimte rondom de koptekst */
+        }
+
+        /* Correcte CSS voor koptekst binnen header */
+        .fashion-koptekst {
+            font-family: 'Aharoni', monospace;
+            font-size: 80px;
+            font-weight: bold;
+            color: #ffa500;
+            text-align: center;
+            margin: 0;
+        }
+
+        .fashion-label {
+            font-family: 'Aharoni', monospace;
+            font-size: 20px;
+            font-weight: bold;
+            color: #333;
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        /* Styling voor het kleine logo */
+        .logo {
+            position: fixed;
+            top: 750px;
+            right: 10px;
+            width: 125px;
+            height: auto;
+            z-index: 1000;
+        }
+
+        /* Basis styling voor plaatjes */
+        .groot {
+            width: 400px;
+            height: 266px;
+            object-fit: cover;
+            margin: 10px;
+            border: 2px solid #ccc;
+            border-radius: 8px;
+        }
+
+        /* Styling voor de terugknop als afbeelding */
+        .terug-knop {
+            display: inline-block;
+            margin: 20px 0;
+            padding: 10px 15px;
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+        }
+
+        /* Styling voor de pijl-afbeelding binnen de knop */
+        .terug-knop img {
+            height: 50px;
+            vertical-align: middle;
+        }
+
+        /* Hover effect voor de pijl-afbeelding */
+        .terug-knop:hover img {
+            opacity: 0.8;
+        }
+
+        /* Container voor de plaatjes */
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+<!-- Pijl als terugknop met afbeelding -->
+<a href="index.html" class="terug-knop">
+  <img src="terug-pijl_318-9335.jpg" alt="Terug" />
+</a>
+
+<!-- Plaats het logo bovenaan de pagina -->
+<img src="Schermafbeelding%202026-05-19%20121617.jpg" alt="Lab C Logo" class="logo" />
+
+<!-- Header met titel -->
+<header>
+    <h1 class="fashion-koptekst">Fashion design lab</h1>
+</header>
+
+<!-- Onder de koptekst de tekst, zonder onderstreping -->
+<p class="fashion-label">
+In deze workshop ontdek je alles over het werken met de naaimachine, verschillende stoffen, duurzame mode en ontwerptechnieken. Of je nu een beginner bent of al gevorderd, er is voor iedereen wat te leren en ontdekken.
+
+Lab C beschikt over de nieuwste apparatuur en spullen, dus je hoeft zelf niets aan te schaffen. Onze creatieve coaches staan klaar om je te helpen en je talenten te ontwikkelen. Wacht niet langer en meld je nu aan
+</p>
+
+<!-- Gallery met plaatjes -->
+<div class="gallery">
+    <!-- Eerste plaatje -->
+    <figure>
+        <a href="j-lab.html" target="_blank">
+            <img src="Schermafbeelding%202026-05-13%20103803.jpg" alt="Naaien bij fashion design" class="groot" />
+        </a>
+        <figcaption> Naaien bij fashion design lab</figcaption>
+    </figure>
+    <!-- Tweede plaatje -->
+    <figure>
+        <a href="ander-pagina.html" target="_blank">
+            <img src="20240530-_DSC8118.jpg" alt="Omschrijving van plaatje 2" class="groot" />
+        </a>
+        <figcaption>Knippen bij het fashion design lab</figcaption>
+    </figure>
+</div>
+</body>
+</html>
